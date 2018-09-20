@@ -76,6 +76,12 @@ else
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*.so,vendor/havoc/prebuilt/suda/lib/$(SUDA_CPU_ABI),system/lib)
 endif
+# Phonelocation!
+PRODUCT_COPY_FILES +=  \
+    vendor/havoc/prebuilt/common/media/location/suda-phonelocation.dat:system/media/location/suda-phonelocation.dat
+# World SPN overrides list
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
@@ -187,6 +193,10 @@ PRODUCT_COPY_FILES += \
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
+
+# LocationProvider
+PRODUCT_PACKAGES += \
+    PhoneLocationProvider
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
