@@ -122,6 +122,7 @@ endif
 PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
+    Jelly \
     OmniJaws \
     OmniSwitch \
     PixelLauncher \
