@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     PixelLauncher \
     SoundPickerPrebuilt \
+    Terminal \
     Turbo \
     WallpaperPickerGooglePrebuilt
 
